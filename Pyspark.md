@@ -5,7 +5,7 @@ from pyspark import SparkContext, SQLContext
 sc = SparkContext.getOrCreate()
 sqlContext = SQLContext(sc)
 
-train = sqlContext.read.csv( path = 'gs://dataproc-staging-us-central1-704334322887-f8nn09qg/notebooks/jupyter/airports.csv', header = True,inferSchema = True)
+train = sqlContext.read.csv( path = '/airports.csv', header = True,inferSchema = True)
 ```
 
 
